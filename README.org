@@ -1,0 +1,4 @@
+* tut-cc.org
+www.tut-cc.org のHTMLです
+githubにpushするたびにWebhookが走りmasterを展開します。
+READMEもwww.tut-cc.org/README.orgで見れる感じなのでそのうちどうにかします。
