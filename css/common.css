@@ -1,0 +1,133 @@
+/* 文書全体 */
+html {
+    font-family: sans-serif;
+    font-size: medium;
+}
+body {
+    color: black;
+    background-color: white;
+    line-height: 1.3;  /* IE 8 では "1.3" と "130%" と "1.3em" とで <h1> などの出力が異なるので注意 */
+    margin: 2%;
+}
+
+/* リンク */
+a:link {
+    color: #C7000A;
+}
+a:visited {
+    color: #400000;
+}
+a:active {
+    color: #ff0000;
+}
+a:hover {
+    color: #ff0000;
+}
+
+/* タイトル */
+h1 {
+    color: white;
+    background-color: #C7000A;
+    text-align: left;
+    border: 3px solid black;
+    padding: 0.1em 0.3em;
+}
+
+/* 見出し */
+h2, h3, h4, h5, h6 {
+    padding: 0.2em 0.3em;
+}
+h4, h5, h6 {
+    font-size: 1em;  /* ブラウザによっては本文よりも小さくなってしまうので */
+}
+h5, h6 {
+    margin: 0.5em;
+}
+h2 {
+    border-bottom: 3px solid #C7000A;;
+}
+h3 {
+    border-bottom: 2px dotted black;
+}
+h4 {
+    border-bottom: 1px solid black;
+}
+h5 {
+    border-bottom: 1px solid #c0c0c0;
+}
+h6 {
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+/* 本文 */
+p {
+    margin: 1em;
+}
+
+/* 文字装飾 */
+b {
+    color: #C7000A;
+}
+i {
+    color: #600000;
+}
+code {
+    color: #600000;
+}
+del {
+    color: #608080;
+}
+
+/* 画像 */
+a img {
+    border: none;
+}
+
+/* リスト */
+ol, ul {
+    padding-left: 2em;
+}
+ol li {
+    /* レベル 1 の数付きリストには数字の横に線を付けてみる */
+    border-left: 1px solid #d0d0d0;
+    padding-left: 0.5em;
+}
+ol li ol li{
+    /* レベル 2 以下の数付きリストには数字の横に線を付けない */
+    border: none;
+    padding-left: 0em;
+}
+ul li {
+    border: none;
+}
+dt {
+    font-weight: normal;
+    border-left: 0.5em solid #C7000A;
+    border-bottom: 1px dotted #C7000A;
+    padding-left: 0.3em;
+    margin: 0.3em 0em;
+    width: 50%;
+}
+
+/* 水平線 */
+hr {
+    height: 1px;
+    background-color: #C7000A;
+    border-style: none;
+}
+
+.bannerWrapper {
+    margin: auto;
+    width: 90%;
+}
+
+.links .logo * {
+  width: 1.5em;
+}
+
+@media screen and (min-width: 720px) {
+   .bannerWrapper {
+     margin-left: -1em;
+     width: 450px;
+   }
+}
