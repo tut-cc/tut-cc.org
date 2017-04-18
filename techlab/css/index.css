@@ -1,0 +1,16 @@
+ul.members li {
+  margin: 0.4em 0;
+  list-style: none;
+}
+
+ul.members li {
+  display: block;
+  float: left;
+  width: 16%;
+}
+
+ul.members:after {
+  content: "";
+  clear: both;
+  display: block;
+}
