@@ -6,11 +6,17 @@ ul.members li {
 ul.members li {
   display: block;
   float: left;
-  width: 16%;
+  width: 10em;
 }
 
 ul.members:after {
   content: "";
   clear: both;
   display: block;
+}
+
+@media screen and (min-width: 960px) {
+   ul.members li {
+     width: 16%;
+   }
 }
