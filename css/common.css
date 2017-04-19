@@ -4,10 +4,10 @@ html {
     font-size: medium;
 }
 body {
-    color: #1F1F1F;
+    color: black;
     background-color: white;
     line-height: 1.3;  /* IE 8 では "1.3" と "130%" と "1.3em" とで <h1> などの出力が異なるので注意 */
-    box-sizing: border-box;
+    margin: 2%;
 }
 
 /* リンク */
@@ -15,8 +15,7 @@ a:link {
     color: #C7000A;
 }
 a:visited {
-  color: #C7000A;
-/*    color: #400000;*/
+    color: #400000;
 }
 a:active {
     color: #ff0000;
@@ -30,7 +29,7 @@ h1 {
     color: white;
     background-color: #C7000A;
     text-align: left;
-    border: 3px solid #1F1F1F;
+    border: 3px solid black;
     padding: 0.1em 0.3em;
 }
 
@@ -45,14 +44,13 @@ h5, h6 {
     margin: 0.5em;
 }
 h2 {
-    margin-top: 1.4em;
-    border-bottom: 3px solid #C7000A;
+    border-bottom: 3px solid #C7000A;;
 }
 h3 {
-    border-bottom: 2px dotted #1F1F1F;
+    border-bottom: 2px dotted black;
 }
 h4 {
-    border-bottom: 1px solid #1F1F1F;
+    border-bottom: 1px solid black;
 }
 h5 {
     border-bottom: 1px solid #c0c0c0;
@@ -102,6 +100,14 @@ ol li ol li{
 ul li {
     border: none;
 }
+dt {
+    font-weight: normal;
+    border-left: 0.5em solid #C7000A;
+    border-bottom: 1px dotted #C7000A;
+    padding-left: 0.3em;
+    margin: 0.3em 0em;
+    width: 50%;
+}
 
 /* 水平線 */
 hr {
@@ -119,11 +125,7 @@ hr {
   width: 1.5em;
 }
 
-@media screen and (min-width: 960px) {
-    body {
-      width: 960px;
-    }
-
+@media screen and (min-width: 720px) {
    .bannerWrapper {
      margin-left: -1em;
      width: 450px;
