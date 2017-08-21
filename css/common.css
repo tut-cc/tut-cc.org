@@ -110,6 +110,13 @@ hr {
     border-style: none;
 }
 
+/* 定義リスト */
+dl {
+	border-left: solid 5px #a1a4a8;
+	padding-left: 2em;
+	font-family: monospace;
+}
+
 .bannerWrapper {
     margin: auto;
     width: 90%;
