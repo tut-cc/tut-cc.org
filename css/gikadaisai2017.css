@@ -1,0 +1,103 @@
+body {
+  color: #FFFFFF;
+  background-color: #292C2B;
+  /* background-color: #101F10; */
+}
+header {
+  display: grid;
+  grid-template-columns: 25em;
+  margin: 2rem 0.5rem;
+  font-size: 1vw;
+}
+header * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+header > h1, header > h2, header > .date {
+  text-align-last: justify;
+  -moz-text-align-last: justify;
+  text-justify: inter-ideograph;
+}
+header > h1 {
+  grid-area: 3 / 1 / 4 / 3;
+  font-size: 7.5em;
+}
+header > h2 {
+  grid-area: 2 / 1;
+  font-size: 3em;
+  padding-left: 0.3em;
+}
+header > .date {
+  grid-area: 1 / 1;
+  font-size: 2em;
+  padding-left: 0.5em;
+}
+header > .place {
+  grid-area: 1 / 2 / 3;
+  font-size: 6.4em;
+  margin-top: -0.14em;
+  text-align: right;
+}
+
+body > p > a {
+  color: #FF59A0 !important;
+}
+
+article {
+  overflow: hidden;
+  padding: 1rem 2rem 1.8rem;
+  margin: 0.5rem;
+}
+.articles article:nth-child(odd) {
+  background-color: #AE0019;
+  /* background-color: #AD002D; */
+}
+.articles article:nth-child(even) {
+  background-color: #234C9E;
+  /* background-color: #233B6C; */
+}
+article > h2 {
+  margin: 0;
+  border: none;
+}
+article > .detail {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+article > .detail > p, ul {
+  margin: 0;
+}
+article > .detail > ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+article > .detail > ul > li:nth-child(odd)::before {
+  content: "◇ ";
+}
+article > .detail > ul > li:nth-child(even)::before {
+  content: "◆ ";
+}
+article .imgs {
+  margin-top: 1rem;
+}
+article .imgs img {
+  box-sizing: border-box;
+  padding-right: 4px;
+  width: 50%;
+}
+
+@media all and (min-width: 700px) {
+  body {
+    width: 700px;
+    margin: 0 auto;
+  }
+  header {
+    font-size: 7px;
+  }
+  article .imgs img {
+    width: 33.3%;
+  }
+
+}
