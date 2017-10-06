@@ -4,6 +4,7 @@ html {
     font-size: medium;
 }
 body {
+    margin: 0;
     color: #1F1F1F;
     background-color: white;
     line-height: 1.3;  /* IE 8 では "1.3" と "130%" と "1.3em" とで <h1> などの出力が異なるので注意 */
