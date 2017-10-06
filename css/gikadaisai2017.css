@@ -5,8 +5,8 @@ body {
 }
 header {
   display: grid;
-  grid-template-columns: 25em;
-  margin: 2rem 0.5rem;
+  grid-template-columns: 21em;
+  margin: 2rem 0.7rem;
   font-size: 1vw;
 }
 header * {
@@ -15,24 +15,33 @@ header * {
   border: none;
   background-color: inherit;
 }
-header > h1, header > h2, header > .date {
-  text-align-last: justify;
-  -moz-text-align-last: justify;
-  text-justify: inter-ideograph;
-}
 header > h1 {
   grid-area: 3 / 1 / 4 / 3;
+  margin-left: -0.4rem;
   font-size: 7.5em;
 }
 header > h2 {
   grid-area: 2 / 1;
   font-size: 3em;
-  padding-left: 0.3em;
 }
-header > .date {
+header > time {
   grid-area: 1 / 1;
   font-size: 2em;
-  padding-left: 0.5em;
+}
+.justify {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-box-pack: justify;
+}
+.justify > span {
+  display: block;
 }
 header > .place {
   grid-area: 1 / 2 / 3;
